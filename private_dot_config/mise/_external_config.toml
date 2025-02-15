@@ -1,0 +1,7 @@
+[tools]
+"asdf:usage" = "latest"
+bat = "latest"
+gum = "latest"
+neovim = "latest"
+ripgrep = "latest"
+starship = "latest"

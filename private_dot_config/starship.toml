@@ -1,0 +1,21 @@
+[env_var.SSH_AGENT_PID]
+format = "[󰣀 ]($style)"
+style = "yellow"
+
+[env_var.SSH_AGENT_KEYS]
+format = "[ ]($style)"
+style = "yellow"
+
+[os]
+format = "[[⎨](dimmed purple)($symbol $codename)[⎬](dimmed purple)]($style)"
+style = "purple"
+disabled = false
+
+[os.symbols]
+Ubuntu = ""
+
+[shlvl]
+disabled = false
+symbol = " "
+threshold = 3
+style="blue"
