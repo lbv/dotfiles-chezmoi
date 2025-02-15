@@ -6,7 +6,7 @@ Host lcr-chingaza lcr-chingaza-tmux
     Hostname 190.147.1.11
     Port 8422
     User chingaza
-Host tmux-lcr-chingaza
+Host lcr-chingaza-tmux
     RemoteCommand env TMUX_CONF=.config/lboshell/tmux/tmux.conf bash -c 'tmux -f $TMUX_CONF new -A -s lboshell'
     RequestTTY yes
 
