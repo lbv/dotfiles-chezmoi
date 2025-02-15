@@ -1,5 +1,5 @@
 #theme = "monokai_pro_spectrum"
-theme = "base16_default_dark"
+theme = "base16_transparent"
 
 [editor]
 color-modes = true
