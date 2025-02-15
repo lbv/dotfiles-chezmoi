@@ -1,0 +1,6 @@
+alias mr='mise run'
+complete -F _complete_alias mr
+
+stmux() {
+    ssh-agent mise run tmux:attach -k "$@"
+}
