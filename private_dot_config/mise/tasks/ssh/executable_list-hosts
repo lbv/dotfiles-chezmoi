@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+#MISE description="Lists hosts available for SSH connections"
+
+ssh_sources=()
+
+[[ -f ~/.ssh/config ]] && ssh_sources+=(~/.ssh/config)
+[[ -d ~/.ssh/config.d ]] && [[ -n "$(ls -A ~/.ssh/config.d)" ]] && ssh_sources+=(~/.ssh/config.d/*)
+[[ -f /etc/ssh/ssh_config ]] && ssh_sources+=(/etc/ssh/ssh_config)
+
+tail -n +1 ${ssh_sources[@]} 2> /dev/null \
+| grep -i '^\s*host\(name\)\? ' \
+| awk '{for (i = 2; i <= NF; i++) print $1 " " $i}' \
+| grep -v '[*?%]' \
+| awk '{for (i = 2; i <= NF; i++) print $i}' \
+| sort -u
