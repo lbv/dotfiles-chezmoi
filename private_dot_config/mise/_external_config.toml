@@ -3,6 +3,7 @@
 "asdf:usage" = "latest"
 bat = "latest"
 chezmoi = "latest"
+eza = "latest"
 fzf = "latest"
 gum = "latest"
 neovim = "latest"
