@@ -2,10 +2,19 @@
 type = "file"
 url = "https://raw.githubusercontent.com/eza-community/eza/refs/heads/main/completions/fish/eza.fish"
 
+[".config/fish/completions/nb.fish"]
+type = "file"
+url = "https://raw.githubusercontent.com/xwmx/nb/refs/heads/master/etc/nb-completion.fish"
+
 [".local/bin/ansi"]
 type = "file"
 executable = true
 url = "https://raw.githubusercontent.com/fidian/ansi/refs/heads/master/ansi"
+
+[".local/bin/nb"]
+type = "file"
+executable = true
+url = "https://raw.githubusercontent.com/xwmx/nb/refs/heads/master/nb"
 
 [".local/share/complete-alias/complete-alias"]
 type = "file"
