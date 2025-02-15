@@ -4,7 +4,7 @@ set -euo pipefail
 #MISE description="Attaches to a tmux session, or launches a new one if necessary"
 #USAGE flag "-k --ssh-keys" default="false" help="Whether to add SSH keys to ssh-agent"
 #USAGE arg "<session>" help="Session name"
-#USAGE complete "session" run="tmux ls -F '#S'"
+#USAGE complete "session" run="mise run -q tmux:list-sessions"
 
 TMUX_OPTS=""
 

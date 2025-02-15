@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+#MISE description="Lists available tmux sessions"
+
+if ! tmux ls -F '#S' 2>/dev/null
+then
+    echo ""
+fi
