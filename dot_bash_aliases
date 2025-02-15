@@ -1,0 +1,23 @@
+mr() {
+    mise run "$@"
+}
+
+msg_info() {
+    mise run -q shell:msg "$@" --type info
+}
+msg_warning() {
+    mise run -q shell:msg "$@" --type warning
+}
+msg_error() {
+    mise run -q shell:msg "$@" --type error
+}
+msg_ok() {
+    mise run -q shell:msg "$@" --type ok
+}
+msg_question() {
+    mise run -q shell:msg "$@" --type question
+}
+
+stmux() {
+    ssh-agent mise run tmux:attach -k "$@"
+}
