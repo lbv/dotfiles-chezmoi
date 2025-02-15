@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+#MISE description="Attaches to a tmux session, or launches a new one if necessary"
+#USAGE flag "-k --ssh-keys" default="false" help="Whether to add SSH keys to ssh-agent"
+#USAGE arg "<session>" help="Session name"
+#USAGE complete "session" run="tmux ls -F '#S'"
+
+TMUX_OPTS=""
+
+if [[ "${usage_ssh_keys}" = "true" ]]
+then
+    keys=$(find ~/.ssh -type f -name 'id*' ! -name '*.*')
+    for key in $keys
+    do
+        ssh-add "${key}"
+    done
+    SSH_AGENT_KEYS=$(ssh-add -l | awk '{ print $4 }' | paste -sd "," -)
+    TMUX_OPTS="${TMUX_OPTS} -e SSH_AGENT_KEYS="${SSH_AGENT_KEYS}""
+fi
+
+tmux new ${TMUX_OPTS} -A -s "${usage_session}"
