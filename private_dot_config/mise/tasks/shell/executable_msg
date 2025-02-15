@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+#MISE description="Displays messages with icons and basic styles"
+#USAGE flag "-t --type <type>" default="info" {
+#USAGE   choices "info" "warning" "error" "ok" "question"
+#USAGE }
+#USAGE flag "-n" help="Do not print a newline"
+#USAGE flag "-o" help="Use outlined icons"
+#USAGE arg "<message>" help="message to display"
+
+icons=()
+if [[ "${usage_o+set}" != "set" ]] || [[ "${usage_o:-}" != "true" ]]; then
+    icons+=(" " " " " " " " " ")
+else
+    icons+=(" " " " " " " " " ")
+fi
+
+prefix=""
+if [[ "$usage_type" == "info" ]]; then
+    prefix='{{ Color "12" "'"${icons[0]}"'" }}'
+elif [[ "$usage_type" == "warning" ]]; then
+    prefix='{{ Color "11" "'"${icons[1]}"'" }}'
+elif [[ "$usage_type" == "error" ]]; then
+    prefix='{{ Color "9" "'"${icons[2]}"'" }}'
+elif [[ "$usage_type" == "ok" ]]; then
+    prefix='{{ Color "10" "'"${icons[3]}"'" }}'
+elif [[ "$usage_type" == "question" ]]; then
+    prefix='{{ Color "223" "'"${icons[4]}"'" }}'
+fi
+
+suffix=""
+if [[ "${usage_n+set}" != "set" ]] || [[ "${usage_n:-}" != "true" ]]; then
+    suffix=$'\n'
+fi
+
+gum format -t template "${prefix} ${usage_message}${suffix}"
