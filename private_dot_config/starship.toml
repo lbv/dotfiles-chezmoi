@@ -1,3 +1,6 @@
+[cmd_duration]
+format = "[󰔟](245) [$duration]($style) "
+
 [env_var.SSH_AGENT_PID]
 format = "[󰣀 ]($style)"
 style = "yellow"
