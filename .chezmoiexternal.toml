@@ -1,3 +1,7 @@
+[".config/fish/completions/buku.fish"]
+type = "file"
+url = "https://raw.githubusercontent.com/jarun/buku/refs/heads/master/auto-completion/fish/buku.fish"
+
 [".config/fish/completions/eza.fish"]
 type = "file"
 url = "https://raw.githubusercontent.com/eza-community/eza/refs/heads/main/completions/fish/eza.fish"
