@@ -1,0 +1,11 @@
+#! /usr/bin/env bash
+set -euo pipefail
+
+if [[ ! -x "$(command -v fish)" ]]
+then
+    echo "fish not found"
+    echo "  install it with something like:"
+    echo "  > sudo apt-add-repository ppa:fish-shell/release-3"
+    echo "  > sudo apt update"
+    echo "  > sudo apt install fish"
+fi
