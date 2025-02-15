@@ -26,7 +26,7 @@ elif [[ "$usage_type" == "error" ]]; then
 elif [[ "$usage_type" == "ok" ]]; then
     prefix='{{ Color "10" "'"${icons[3]}"'" }}'
 elif [[ "$usage_type" == "question" ]]; then
-    prefix='{{ Color "223" "'"${icons[4]}"'" }}'
+    prefix='{{ Color "209" "'"${icons[4]}"'" }}'
 fi
 
 suffix=""
