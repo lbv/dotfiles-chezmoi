@@ -1,0 +1,245 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": 
+    [
+        {
+            "command": "scrollDownPage",
+            "id": "User.scrollDownPage",
+            "keys": "ctrl+pgdn"
+        },
+        {
+            "command": "find",
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": "scrollUpPage",
+            "id": "User.scrollUpPage",
+            "keys": "ctrl+pgup"
+        },
+        {
+            "command": "paste",
+            "id": "User.paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "id": "User.splitPane.A6751878",
+            "keys": "alt+shift+d"
+        }
+    ],
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{360d52ea-d472-11eb-b8bc-0242ac130003}",
+    "experimental.detectURLs": true,
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "closeOnExit": "always"
+        },
+        "list": 
+        [
+            {
+                "colorScheme": "Gruvbox",
+                "commandline": "\"%PROGRAMFILES%\\git\\bin\\bash.exe\" --login -i -l",
+                "font": 
+                {
+                    "face": "Inconsolata Nerd Font"
+                },
+                "guid": "{360d52ea-d472-11eb-b8bc-0242ac130003}",
+                "icon": "%PROGRAMFILES%\\git\\mingw64\\share\\git\\git-for-windows.ico",
+                "intenseTextStyle": "all",
+                "name": "Git Bash",
+                "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "colorScheme": "Root Loops (plum)",
+                "font": 
+                {
+                    "face": "Inconsolata Nerd Font"
+                },
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "hidden": false,
+                "intenseTextStyle": "all",
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "colorScheme": "Root Loops (plum)",
+                "commandline": "C:\\WINDOWS\\system32\\wsl.exe -d Ubuntu-20.04 /bin/bash -i",
+                "font": 
+                {
+                    "face": "Inconsolata Nerd Font"
+                },
+                "guid": "{329b7726-ddc0-47f4-bc8f-b2bc240379c1}",
+                "hidden": false,
+                "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
+                "intenseTextStyle": "all",
+                "name": "Ubuntu (bash)",
+                "startingDirectory": "~"
+            },
+            {
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "S\u00edmbolo del sistema"
+            },
+            {
+                "colorScheme": "Catppuccin Macchiato",
+                "commandline": "C:\\lb\\tools\\nushell\\nu.exe",
+                "guid": "{0f53a069-6ab2-45fe-8393-b1abf01e462d}",
+                "hidden": false,
+                "name": "Nu"
+            }
+        ]
+    },
+    "schemes": 
+    [
+        {
+            "background": "#24273A",
+            "black": "#5B6078",
+            "blue": "#8AADF4",
+            "brightBlack": "#494D64",
+            "brightBlue": "#78A2F7",
+            "brightCyan": "#65CDC2",
+            "brightGreen": "#8ED281",
+            "brightPurple": "#F5ACDF",
+            "brightRed": "#EC7485",
+            "brightWhite": "#A5ADCB",
+            "brightYellow": "#E5C984",
+            "cursorColor": "#F4DBD6",
+            "cyan": "#8BD5CA",
+            "foreground": "#CAD3F5",
+            "green": "#A6DA95",
+            "name": "Catppuccin Macchiato",
+            "purple": "#F5BDE6",
+            "red": "#ED8796",
+            "selectionBackground": "#5B6078",
+            "white": "#B8C0E0",
+            "yellow": "#EED49F"
+        },
+        {
+            "background": "#282828",
+            "black": "#282828",
+            "blue": "#458588",
+            "brightBlack": "#928374",
+            "brightBlue": "#83A598",
+            "brightCyan": "#8EC07C",
+            "brightGreen": "#B8BB26",
+            "brightPurple": "#D3869B",
+            "brightRed": "#FB4934",
+            "brightWhite": "#EBDBB2",
+            "brightYellow": "#FABD2F",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#689D6A",
+            "foreground": "#FBF1C7",
+            "green": "#98971A",
+            "name": "Gruvbox",
+            "purple": "#B16286",
+            "red": "#CC241D",
+            "selectionBackground": "#32302F",
+            "white": "#A89984",
+            "yellow": "#D79921"
+        },
+        {
+            "background": "#17242D",
+            "black": "#2A3C4A",
+            "blue": "#739BCF",
+            "brightBlack": "#516F84",
+            "brightBlue": "#8EB1DD",
+            "brightCyan": "#72BDBD",
+            "brightGreen": "#94BC7F",
+            "brightPurple": "#C49DD5",
+            "brightRed": "#DD999D",
+            "brightWhite": "#F3F7FA",
+            "brightYellow": "#CDA772",
+            "cursorColor": "#B3CADC",
+            "cyan": "#5EA7A7",
+            "foreground": "#E4ECF3",
+            "green": "#80A66B",
+            "name": "Root Loops (plum)",
+            "purple": "#B284C6",
+            "red": "#CF7E85",
+            "selectionBackground": "#B3CADC",
+            "white": "#B3CADC",
+            "yellow": "#B7915C"
+        }
+    ],
+    "tabSwitcherMode": "mru",
+    "theme": "Root Loops (plum)",
+    "themes": 
+    [
+        {
+            "name": "Catppuccin Macchiato",
+            "tab": 
+            {
+                "background": "terminalBackground",
+                "iconStyle": "default",
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "tabRow": 
+            {
+                "background": "#494D64FF",
+                "unfocusedBackground": "#181926FF"
+            },
+            "window": 
+            {
+                "applicationTheme": "dark",
+                "experimental.rainbowFrame": false,
+                "frame": null,
+                "unfocusedFrame": null,
+                "useMica": false
+            }
+        },
+        {
+            "name": "Root Loops (plum)",
+            "tab": 
+            {
+                "background": "terminalBackground",
+                "iconStyle": "default",
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "tabRow": 
+            {
+                "background": "#516F84FF",
+                "unfocusedBackground": "#2A3C4ACC"
+            },
+            "window": 
+            {
+                "applicationTheme": "dark",
+                "experimental.rainbowFrame": false,
+                "frame": null,
+                "unfocusedFrame": null,
+                "useMica": false
+            }
+        }
+    ]
+}

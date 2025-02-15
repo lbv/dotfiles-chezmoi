@@ -1,3 +1,4 @@
 # Externally modified files
 **/_external_*
 .editorconfig
+/opt/
