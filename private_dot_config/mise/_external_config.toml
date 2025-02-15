@@ -4,6 +4,7 @@
 bat = "latest"
 chezmoi = "latest"
 eza = "latest"
+fd = "latest"
 fzf = "latest"
 gum = "latest"
 neovim = "latest"
