@@ -1,6 +1,8 @@
 [tools]
 "asdf:usage" = "latest"
 bat = "latest"
+chezmoi = "latest"
+fzf = "latest"
 gum = "latest"
 neovim = "latest"
 ripgrep = "latest"

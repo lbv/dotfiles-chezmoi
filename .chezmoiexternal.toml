@@ -1,3 +1,8 @@
+[".local/bin/ansi"]
+type = "file"
+executable = true
+url = "https://raw.githubusercontent.com/fidian/ansi/refs/heads/master/ansi"
+
 [".local/share/complete-alias/complete-alias"]
 type = "file"
 url = "https://raw.githubusercontent.com/cykerway/complete-alias/refs/heads/master/complete_alias"

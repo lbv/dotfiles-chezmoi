@@ -1,0 +1,3 @@
+# fzf
+# https://junegunn.github.io/fzf/
+eval "$(fzf --bash)"
