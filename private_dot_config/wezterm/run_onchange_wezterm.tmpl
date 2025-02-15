@@ -1,0 +1,14 @@
+#! /usr/bin/env bash
+set -euo pipefail
+
+# wezterm.lua hash: {{ include "private_dot_config/wezterm/wezterm.lua" | sha256sum }}
+
+copy_wezterm_config() {
+    [[ "$(command -v wslvar)" ]] || return
+    local dest_home=$(wslpath "$(wslvar USERPROFILE)")
+    local dest="${dest_home}/.config/wezterm/"
+    echo "Copying wezterm config .."
+    cp -v wezterm.lua "${dest}"
+}
+
+copy_wezterm_config
