@@ -2,6 +2,13 @@ Host *
     ServerAliveInterval 64
     TCPKeepAlive no
 
+Host lcr-centos
+    Hostname 190.147.1.11
+    HostKeyAlgorithms +ssh-rsa
+    Port 22
+    PubkeyAcceptedKeyTypes +ssh-rsa
+    User Admin
+
 Host lcr-chingaza lcr-chingaza-tmux
     Hostname 190.147.1.11
     Port 8422
