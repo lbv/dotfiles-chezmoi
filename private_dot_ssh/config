@@ -1,0 +1,15 @@
+Host *
+    ServerAliveInterval 64
+    TCPKeepAlive no
+
+Host lcr-chingaza lcr-chingaza-tmux
+    Hostname 190.147.1.11
+    Port 8422
+    User chingaza
+Host tmux-lcr-chingaza
+    RemoteCommand env TMUX_CONF=.config/lboshell/tmux/tmux.conf bash -c 'tmux -f $TMUX_CONF new -A -s lboshell'
+    RequestTTY yes
+
+Host oli-open-prd
+    Hostname 10.11.3.41
+    User usropen
