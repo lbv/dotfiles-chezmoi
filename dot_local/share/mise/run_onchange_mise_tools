@@ -1,0 +1,4 @@
+#! /usr/bin/env fish
+
+msg_info 'Installing {{ Bold "mise" }} tools'
+mise install
