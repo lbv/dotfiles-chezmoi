@@ -14,6 +14,11 @@ disabled = false
 [os.symbols]
 Ubuntu = ""
 
+[shell]
+bash_indicator = "󱆃 "
+fish_indicator = " "
+disabled = false
+
 [shlvl]
 disabled = false
 symbol = " "
