@@ -8,7 +8,7 @@ copy_wezterm_config() {
     local dest_home=$(wslpath "$(wslvar USERPROFILE)")
     local dest="${dest_home}/.config/wezterm/"
     echo "Copying wezterm config .."
-    cp -v wezterm.lua "${dest}"
+    cp -vf wezterm.lua "${dest}"
 }
 
 copy_wezterm_config
