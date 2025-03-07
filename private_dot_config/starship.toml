@@ -10,16 +10,18 @@ format = "[ ]($style)"
 style = "yellow"
 
 [os]
-format = "[[⎨](dimmed purple)($symbol $codename)[⎬](dimmed purple)]($style)"
+format = "[$symbol]($style)"
 style = "purple"
 disabled = false
 
 [os.symbols]
-Ubuntu = ""
+Ubuntu = " "
+Windows = " "
 
 [shell]
-bash_indicator = "󱆃 "
+bash_indicator = " "
 fish_indicator = " "
+format = "[$indicator]($style)"
 disabled = false
 
 [shlvl]
