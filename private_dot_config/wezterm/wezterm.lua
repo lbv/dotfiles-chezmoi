@@ -10,7 +10,7 @@ local launch_menu = {}
 if is_windows then
   table.insert(launch_menu, {
     label = 'Git Bash',
-    args = { os.getenv('PROGRAMFILES') .. '\\git\\bin\\bash.exe', '--login', '-i', '-l' },
+    args = { os.getenv('PROGRAMFILES') .. '\\git\\bin\\bash.exe', '-i', '-l' },
     domain = { DomainName = 'local' },
   })
 end
