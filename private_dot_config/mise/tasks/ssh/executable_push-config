@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euxo pipefail
+
+#MISE description="Pushes my custom config files to a remote server"
+#USAGE arg "<host>" help="The remote host to send relevant files to"
+#USAGE complete "host" run="mise run -q ssh:list-hosts"
+
+echo "Hi: $usage_host"

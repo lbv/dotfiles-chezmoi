@@ -1,0 +1,50 @@
+#! /usr/bin/env bash
+set -euo pipefail
+
+if [[ ! -x "$(command -v xdg-open)" ]]
+then
+    echo "xdg-open not found"
+    echo "  install it with something like:"
+    echo "  > sudo apt install xdg-utils"
+fi
+
+if [[ ! -x "$(command -v ncat)" ]]
+then
+    echo "ncat not found"
+    echo "  install it with something like:"
+    echo "  > sudo apt install ncat"
+fi
+
+if [[ ! -x "$(command -v w3m)" ]]
+then
+    echo "w3m not found"
+    echo "  install it with something like:"
+    echo "  > sudo apt install w3m"
+fi
+
+if [[ ! -x "$(command -v wslview)" ]]
+then
+    echo "wslview not found"
+    echo "  install it with something like:"
+    echo "  > sudo add-apt-repository ppa:wslutilities/wslu"
+    echo "  > sudo apt update"
+    echo "  > sudo apt install wslu"
+fi
+
+if [[ ! -x "$(command -v pandoc)" ]]
+then
+    echo "pandoc not found"
+    echo "  install it with something like:"
+    echo "  > mise use -g pandoc"
+fi
+
+if [[ ! -x "$(command -v readable)" ]]
+then
+    echo "readbility-cli not found"
+    echo "  install it with something like:"
+    echo "  > mise use -g npm:readability-cli"
+fi
+
+#ripgrep
+#bat
+
