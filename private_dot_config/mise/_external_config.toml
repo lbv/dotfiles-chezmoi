@@ -1,5 +1,6 @@
 # For tmux, the host system needs: make, gcc, yacc, libncurses-dev
 [tools]
+"aqua:dylanaraps/neofetch" = "latest"
 "asdf:usage" = "latest"
 bat = "latest"
 chezmoi = "latest"
@@ -10,6 +11,7 @@ github-cli = "latest"
 gitui = "latest"
 gum = "latest"
 helix = "latest"
+java = "21"
 jq = "latest"
 lua-language-server = "latest"
 neovim = "latest"
